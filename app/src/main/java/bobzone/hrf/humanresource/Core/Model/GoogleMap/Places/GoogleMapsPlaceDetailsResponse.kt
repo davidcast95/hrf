@@ -1,0 +1,12 @@
+package bobzone.hrf.humanresource.Core.Model.GoogleMap.Places
+
+import com.google.gson.annotations.SerializedName
+
+/**
+ * Created by davidwibisono on 2/17/18.
+ */
+
+open class GoogleMapsPlaceDetailsResponse {
+    @SerializedName("result")
+    var result:GoogleMapsPlaceDetailsData = GoogleMapsPlaceDetailsData()
+}

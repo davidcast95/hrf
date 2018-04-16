@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="12dp"
+    android:paddingLeft="20dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="4dp">
+    <TextView
+        android:inputType="textCapWords"
+        android:id="@+id/field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Field"
+        android:textColor="@color/Grey"/>
+</LinearLayout>

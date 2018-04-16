@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/form_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:layout_weight="0.2"
+            >
+        </ListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:textColor="@color/White"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total "/>
+            <TextView
+                android:textColor="@color/White"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:textStyle="bold"
+                android:id="@+id/grand_total"
+                android:textSize="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="textEnd"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/view_loading"/>
+</RelativeLayout>

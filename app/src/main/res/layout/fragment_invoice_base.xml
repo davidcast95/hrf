@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGrey">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/status_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/overdue_toggle"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overdue"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:padding="8dp"
+                android:background="@drawable/corner_button_danger"
+                android:textSize="14dp"
+                android:layout_margin="6dp"/>
+            <TextView
+                android:id="@+id/unpaid_toggle"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unpaid"
+                android:textColor="@color/White"
+                android:textStyle="bold"
+                android:textAlignment="textEnd"
+                android:padding="8dp"
+                android:background="@drawable/corner_button_warning"
+                android:textSize="14dp"
+                android:layout_margin="6dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <include layout="@layout/view_master_list"/>
+</LinearLayout>
